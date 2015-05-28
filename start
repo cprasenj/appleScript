@@ -10,47 +10,47 @@ tell application "iTerm"
       tell last session to write text "cd Swift_Vagrant_Box/"
       delay 2
       tell last session to write text "vagrant up"
-      delay 2
+      delay 4
 
     tell application "System Events" to keystroke "d" using {command down}
       delay 2
       tell last session to write text "cd b2b-vagrant"
       delay 2
       tell last session to write text "vagrant up"
-      delay 2
+      delay 4
 
     tell application "System Events" to keystroke "d" using {command down}
       tell last session to write text "cd cisco/pipeline"
-      # tell last session to write text "g co release-1.4.5"
-      # tell last session to write text "g pl"
+      tell last session to write text "git checkout release-1.4.5"
+      tell last session to write text "git pull"
       tell last session to write text "./build.sh && ./run.sh"
       delay 2
 
     tell application "System Events" to keystroke "d" using {command down}
       tell last session to write text "cd cisco/userpi"
-      # tell last session to write text "g co release-1.4.5"
-      # tell last session to write text "g pl"
+      tell last session to write text "git checkout release-1.4.5"
+      tell last session to write text "git pull"
       tell last session to write text "./build.sh && ./run.sh"
       delay 2
 
     tell application "System Events" to keystroke "d" using {command down}
       tell last session to write text "cd cisco/contentstore"
-      # tell last session to write text "g co release-1.4.5"
-      # tell last session to write text "g pl"
+      tell last session to write text "git checkout release-1.4.5"
+      tell last session to write text "git pull"
       tell last session to write text "./build.sh && ./run.sh"
       delay 2
 
     tell application "System Events" to keystroke "d" using {command down}
       tell last session to write text "cd cisco/authorization"
-      # tell last session to write text "g co release-1.4.5"
-      # tell last session to write text "g pl"
+      tell last session to write text "git checkout release-1.4.5"
+      tell last session to write text "git pull"
       tell last session to write text "./build.sh && ./run.sh"
       delay 2
 
     tell application "System Events" to keystroke "d" using {command down}
       tell last session to write text "cd cisco/knowledgecenter"
-      # tell last session to write text "g co release-1.4.5"
-      # tell last session to write text "g pl"
+      tell last session to write text "git checkout release-1.4.5"
+      tell last session to write text "git pull"
       tell last session to write text "./build.sh && ./run.sh"
   end tell
 end tell
